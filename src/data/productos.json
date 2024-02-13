@@ -1,0 +1,291 @@
+ [
+      {
+        "id": 1,
+        "nombre": "Contrabajo Yamaha YVB-105",
+        "descripcion": "Contrabajo acústico de alta calidad, ideal para músicos profesionales.",
+        "precio": 2500,
+        "stock": 10,
+        "marca": "Yamaha",
+        "categoria": "contrabajos",
+        "images": [
+          "https://example.com/contrabajo1.jpg",
+          "https://example.com/contrabajo1_2.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "Bajo Eléctrico Fender Precision Bass",
+        "descripcion": "Bajo eléctrico clásico con un sonido potente y versátil.",
+        "precio": 1200,
+        "stock": 8,
+        "marca": "Fender",
+        "categoria": "bajos electricos",
+        "images": [
+          "https://example.com/bajo1.jpg",
+          "https://example.com/bajo1_2.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "nombre": "Ford Mustang 1969",
+        "descripcion": "Auto clásico americano, potente y lleno de estilo.",
+        "precio": 45000,
+        "stock": 3,
+        "marca": "Ford",
+        "categoria": "autos antiguos",
+        "images": [
+          "https://example.com/mustang1.jpg",
+          "https://example.com/mustang1_2.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "nombre": "Camiseta Barcelona FC 2022",
+        "descripcion": "Camiseta oficial del FC Barcelona para la temporada 2022.",
+        "precio": 80,
+        "stock": 20,
+        "marca": "Nike",
+        "categoria": "camisetas de futbol",
+        "images": [
+          "https://example.com/camiseta1.jpg",
+          "https://example.com/camiseta1_2.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "nombre": "Contrabajo Stagg EDB-3/4 BK",
+        "descripcion": "Contrabajo eléctrico de alta calidad, perfecto para conciertos y ensayos.",
+        "precio": 1800,
+        "stock": 5,
+        "marca": "Stagg",
+        "categoria": "contrabajos",
+        "images": [
+          "https://example.com/contrabajo2.jpg",
+          "https://example.com/contrabajo2_2.jpg"
+        ]
+      },
+      {
+        "id": 6,
+        "nombre": "Bajo Eléctrico Music Man StingRay",
+        "descripcion": "Bajo eléctrico de primera calidad con un sonido único y potente.",
+        "precio": 2200,
+        "stock": 7,
+        "marca": "Music Man",
+        "categoria": "bajos electricos",
+        "images": [
+          "https://example.com/bajo2.jpg",
+          "https://example.com/bajo2_2.jpg"
+        ]
+      },
+      {
+        "id": 7,
+        "nombre": "Chevrolet Bel Air 1957",
+        "descripcion": "Auto clásico americano, símbolo de los años dorados del automóvil.",
+        "precio": 40000,
+        "stock": 2,
+        "marca": "Chevrolet",
+        "categoria": "autos antiguos",
+        "images": [
+          "https://example.com/belair1.jpg",
+          "https://example.com/belair1_2.jpg"
+        ]
+      },
+      {
+        "id": 8,
+        "nombre": "Camiseta Real Madrid CF 2022",
+        "descripcion": "Camiseta oficial del Real Madrid CF para la temporada 2022.",
+        "precio": 75,
+        "stock": 18,
+        "marca": "Adidas",
+        "categoria": "camisetas de futbol",
+        "images": [
+          "https://example.com/camiseta2.jpg",
+          "https://example.com/camiseta2_2.jpg"
+        ]
+      },
+      {
+        "id": 9,
+        "nombre": "Contrabajo Cremona SB-4",
+        "descripcion": "Contrabajo acústico de gama media, perfecto para estudiantes y aficionados.",
+        "precio": 1200,
+        "stock": 12,
+        "marca": "Cremona",
+        "categoria": "contrabajos",
+        "images": [
+          "https://example.com/contrabajo3.jpg",
+          "https://example.com/contrabajo3_2.jpg"
+        ]
+      },
+      {
+        "id": 10,
+        "nombre": "Bajo Eléctrico Gibson Thunderbird",
+        "descripcion": "Bajo eléctrico icónico con un diseño llamativo y un sonido excepcional.",
+        "precio": 2800,
+        "stock": 6,
+        "marca": "Gibson",
+        "categoria": "bajos electricos",
+        "images": [
+          "https://example.com/bajo3.jpg",
+          "https://example.com/bajo3_2.jpg"
+        ]
+      },
+   {
+            "id": 11,
+            "nombre": "Contrabajo Eastman VB105",
+            "descripcion": "Contrabajo acústico de alta gama con un sonido cálido y profundo.",
+            "precio": 3500,
+            "stock": 8,
+            "marca": "Eastman",
+            "categoria": "contrabajos",
+            "images": [
+              "https://example.com/contrabajo4.jpg",
+              "https://example.com/contrabajo4_2.jpg"
+            ]
+          },
+          {
+            "id": 12,
+            "nombre": "Bajo Eléctrico Warwick Corvette",
+            "descripcion": "Bajo eléctrico de calidad premium, fabricado con los mejores materiales.",
+            "precio": 3200,
+            "stock": 5,
+            "marca": "Warwick",
+            "categoria": "bajos electricos",
+            "images": [
+              "https://example.com/bajo4.jpg",
+              "https://example.com/bajo4_2.jpg"
+            ]
+          },
+          {
+            "id": 13,
+            "nombre": "Ford Model T 1925",
+            "descripcion": "Uno de los primeros autos producidos en masa, un ícono de la historia del automóvil.",
+            "precio": 55000,
+            "stock": 2,
+            "marca": "Ford",
+            "categoria": "autos antiguos",
+            "images": [
+              "https://example.com/modelt1.jpg",
+              "https://example.com/modelt1_2.jpg"
+            ]
+          },
+          {
+            "id": 14,
+            "nombre": "Camiseta Juventus FC 2022",
+            "descripcion": "Camiseta oficial de la Juventus FC para la temporada 2022.",
+            "precio": 85,
+            "stock": 15,
+            "marca": "Adidas",
+            "categoria": "camisetas de futbol",
+            "images": [
+              "https://example.com/camiseta3.jpg",
+              "https://example.com/camiseta3_2.jpg"
+            ]
+          },
+          {
+            "id": 15,
+            "nombre": "Contrabajo Engelhardt EC-1",
+            "descripcion": "Contrabajo económico pero de calidad aceptable, ideal para principiantes.",
+            "precio": 900,
+            "stock": 20,
+            "marca": "Engelhardt",
+            "categoria": "contrabajos",
+            "images": [
+              "https://example.com/contrabajo5.jpg",
+              "https://example.com/contrabajo5_2.jpg"
+            ]
+          },
+          {
+            "id": 16,
+            "nombre": "Bajo Eléctrico Yamaha TRBX304",
+            "descripcion": "Bajo eléctrico versátil y fácil de tocar, perfecto para músicos intermedios.",
+            "precio": 800,
+            "stock": 12,
+            "marca": "Yamaha",
+            "categoria": "bajos electricos",
+            "images": [
+              "https://example.com/bajo5.jpg",
+              "https://example.com/bajo5_2.jpg"
+            ]
+          },
+          {
+            "id": 17,
+            "nombre": "Chevrolet Corvette 1967",
+            "descripcion": "Auto deportivo clásico con un diseño aerodinámico y un motor potente.",
+            "precio": 65000,
+            "stock": 3,
+            "marca": "Chevrolet",
+            "categoria": "autos antiguos",
+            "images": [
+              "https://example.com/corvette1.jpg",
+              "https://example.com/corvette1_2.jpg"
+            ]
+          },
+          {
+            "id": 18,
+            "nombre": "Camiseta Liverpool FC 2022",
+            "descripcion": "Camiseta oficial del Liverpool FC para la temporada 2022.",
+            "precio": 70,
+            "stock": 25,
+            "marca": "Nike",
+            "categoria": "camisetas de futbol",
+            "images": [
+              "https://example.com/camiseta4.jpg",
+              "https://example.com/camiseta4_2.jpg"
+            ]
+          },
+          {
+            "id": 19,
+            "nombre": "Contrabajo Palatino VE-500",
+            "descripcion": "Contrabajo eléctrico de calidad decente a un precio asequible.",
+            "precio": 1100,
+            "stock": 10,
+            "marca": "Palatino",
+            "categoria": "contrabajos",
+            "images": [
+              "https://example.com/contrabajo6.jpg",
+              "https://example.com/contrabajo6_2.jpg"
+            ]
+          },
+          {
+            "id": 20,
+            "nombre": "Bajo Eléctrico Fender Jazz Bass",
+            "descripcion": "Bajo eléctrico clásico con un sonido brillante y versátil.",
+            "precio": 2500,
+            "stock": 7,
+            "marca": "Fender",
+            "categoria": "bajos electricos",
+            "images": [
+              "https://example.com/bajo6.jpg",
+              "https://example.com/bajo6_2.jpg"
+            ]
+          },
+          {
+            "id": 21,
+            "nombre": "Ford Model A 1929",
+            "descripcion": "El sucesor del Modelo T, con un diseño más moderno y mejoras significativas.",
+            "precio": 48000,
+            "stock": 1,
+            "marca": "Ford",
+            "categoria": "autos antiguos",
+            "images": [
+              "https://example.com/modela1.jpg",
+              "https://example.com/modela1_2.jpg"
+            ]
+          },
+          {
+            "id": 22,
+            "nombre": "Camiseta FC Barcelona 2022",
+            "descripcion": "Camiseta oficial del FC Barcelona para la temporada 2022.",
+            "precio": 80,
+            "stock": 18,
+            "marca": "Nike",
+            "categoria": "camisetas de futbol",
+            "images": [
+              "https://example.com/camiseta5.jpg",
+              "https://example.com/camiseta5_2.jpg"
+            ]
+          }
+        ]
+  
+  
+  
