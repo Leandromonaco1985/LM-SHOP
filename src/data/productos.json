@@ -284,8 +284,47 @@
               "https://example.com/camiseta5.jpg",
               "https://example.com/camiseta5_2.jpg"
             ]
-          }
+          },
+          {
+            "id": 23,
+            "nombre": "Camiseta Aldosivi",
+            "descripcion": "Camiseta oficial del Tiburon.",
+            "precio": 180,
+            "stock": 25,
+            "marca": "Kappa",
+            "categoria": "camisetas de futbol",
+            "images": [
+              "https://example.com/camiseta1.jpg",
+              "https://example.com/camiseta1_2.jpg"
+            ]
+          },
+          {
+            "id": 24,
+            "nombre": "Camiseta Argentina",
+            "descripcion": "Camiseta oficial del Campeon.",
+            "precio": 180,
+            "stock": 220,
+            "marca": "Adidas",
+            "categoria": "camisetas de futbol",
+            "images": [
+              "https://example.com/camiseta1.jpg",
+              "https://example.com/camiseta1_2.jpg"
+            ]
+          },
+          {
+            "id": 25,
+            "nombre": "Camiseta Werder Bremen",
+            "descripcion": "Camiseta oficial del Werber Bremen para la temporada 2022.",
+            "precio": 80,
+            "stock": 20,
+            "marca": "Nike",
+            "categoria": "camisetas de futbol",
+            "images": [
+              "https://example.com/camiseta1.jpg",
+              "https://example.com/camiseta1_2.jpg"
+            ]
+          },
         ]
   
   
-  
+       

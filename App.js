@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Pressable } from 'react-native';
-
+import Header from './src/components/Header'
 import Constants from 'expo-constants';
 import Home from './src/screens/Home';
 
@@ -8,10 +8,11 @@ import Home from './src/screens/Home';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}> LM SHOP</Text>
-      <View>
+       
+        <Header/>
+       
         <Home/>
-      </View>
+    
        <StatusBar style="auto" />
     </View>
   );
@@ -20,16 +21,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#780000',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight
+    paddingTop: Constants.statusBarHeight,
+   
   },
-  header:{
-    color: '#fdf0d5',
-    marginTop: 10,
-    padding:30,
-    fontSize: 30,
-    
-  }
+
 });
