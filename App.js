@@ -3,9 +3,17 @@ import { StyleSheet, Text, View, Pressable } from 'react-native';
 import Header from './src/components/Header'
 import Constants from 'expo-constants';
 import Home from './src/screens/Home';
+import { colors } from './src/global/colors';
+import { useFonts } from 'expo-font';
+import { fonts } from './src/global/fonts';
 
 
 export default function App() {
+  //creo hook para importar fuentes
+  const [fontsLoaded]=useFonts(fonts);
+  if (!fontsLoaded){
+    return null
+  }
   return (
     <View style={styles.container}>
        
@@ -21,7 +29,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: colors.egg,
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,

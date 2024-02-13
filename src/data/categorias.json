@@ -1,6 +1,19 @@
-[
-    "Contrabajos",
-    "Bajos Electricos",
-    "Autos Antiguos",
-    "Camisetas de Futbol"
+[   
+    {
+        "categoryName": "Contrabajos",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-mUCUfsVXbD1PYoi7EgwzTmYbAznmn0bq7Q&usqp=CAU"
+    },
+    {
+        "categoryName":"Bajos Electricos",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZCgT8q69kyrSC504Lbp5gyemsIOdc74V6A&usqp=CAU"
+    },
+    {
+        "categoryName": "Autos Antiguos",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStzGuPARQMDgHdYHQdN84yxFpRguU2P4RxYQ&usqp=CAU"
+    },
+    {
+        "categoryName": "Camisetas de Futbol",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQ1mGAOKIE0yG7kxj4rPNKs8cSR0uOJZO2A&usqp=CAU"
+    }
+    
 ]

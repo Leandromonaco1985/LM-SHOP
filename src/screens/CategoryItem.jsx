@@ -1,29 +1,28 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable, StatusBar, FlatList, Image } from 'react-native';
+import { colors } from '../global/colors';
 
 const CategoryItem = ({ category, products, setSelectedCategory }) => {
   const filteredProducts = products.filter((product) => product.categoria.toLowerCase() === category.toLowerCase());
   const handleBackToHome = () => {
-    // Aquí podrías realizar alguna otra acción si lo deseas
     setSelectedCategory(null);
-
   };
+
   const renderItem = ({ item }) => (
     <View style={styles.productContainer}>
       <Text style={styles.productName}>{item.nombre}</Text>
       <Text style={styles.productDescription}>{item.descripcion}</Text>
       <Text style={styles.productPrice}>Precio: ${item.precio}</Text>
-      {/* <Image source={{uri:item.images}} style={styles.productImage}/> */}
+      {item.images.map((image, index) => (
+      <Image key={index} source={{ uri: image }} style={styles.productImage} />
+      ))}
     </View>
   );
 
   return (
     <View style={styles.container}>
     <Text style={styles.title}>{category}</Text>
-    <Pressable style={styles.btn} onPress={handleBackToHome}>
-      <Text style={styles.btnText}>Volver a Home</Text>
-    </Pressable>
-
+    
     <FlatList
        style={styles.FlatListStyle}
        contentContainerStyle={styles.flatListContent}
@@ -33,6 +32,9 @@ const CategoryItem = ({ category, products, setSelectedCategory }) => {
     />
 
 
+    <Pressable style={styles.btn} onPress={handleBackToHome}>
+      <Text style={styles.btnText}>Volver a Home</Text>
+    </Pressable>
   </View>
   );
 };
@@ -50,8 +52,9 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   title: {
+
     fontSize: 20,
-    fontWeight: 'bold',
+    fontFamily: 'bold',
     marginBottom: 10,
     marginTop: 20
   },
@@ -66,14 +69,16 @@ const styles = StyleSheet.create({
   productName: {
     fontSize: 18,
     fontWeight: 'bold',
+    
   },
   productDescription: {
+    fontFamily: 'light',
     fontSize: 16,
   },
   productPrice: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: 'green',
+    color: colors.violet,
   },
   productImage: {
     width: 100,
@@ -81,12 +86,13 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   btn: {
-    margin: 20,
-    padding: 5,
-    backgroundColor: 'red',
-    borderRadius: 25,
+    margin: 25,
+    padding: 15,
+    backgroundColor: colors.violet,
+    borderRadius: 15,
   },
   btnText: {
+    fontFamily: 'light',
     color: 'white'
   }
 });
