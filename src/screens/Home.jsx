@@ -4,33 +4,18 @@ import CategoryItem from './CategoryItem';
 import categorias from '../data/categorias.json';
 import productos from '../data/productos.json';
 import { colors } from '../global/colors';
+import Header from '../components/Header';
+import Categorias from '../components/Categorias';
+import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
-
-  const handleCategoryPress = (category) => {
-    setSelectedCategory(category);
-  };
-
-  if (selectedCategory) {
-    return <CategoryItem category={selectedCategory} products={productos} setSelectedCategory={setSelectedCategory} />;
-  }
-
+  const navigation = useNavigation();
+ 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Categorías de Productos</Text>
-      <View style={styles.categoryBox}>
-      {categorias.map((category, index) => (
-        <Pressable
-          key={index}
-          style={styles.categoryButton}
-          onPress={() => handleCategoryPress(category.categoryName)}
-        >
-          <Text style={styles.btnText}> {category.categoryName}</Text>
-          <Image source={{ uri: category.img }} style={styles.categoryImage} />
-        </Pressable>
-      ))}
-      </View>
+      <Header navigation={navigation}/>
+      <Categorias  navigation={navigation}/>
+      
     </View>
   );
 };

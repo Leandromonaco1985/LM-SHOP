@@ -1,19 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { colors } from '../global/colors';
 import { fonts } from '../global/fonts';
 
-const Header =()=> {
+const Header =({navigation, title})=> {
   return (
     <View style={styles.container}>
         <Ionicons name="menu" size={40} color={colors.egg} />
        <Text style={styles.header}> LM SHOP</Text>
-       <EvilIcons name="cart" size={40} color={colors.egg} />
+       <Text> {title}</Text>
+       <Pressable onPress={() => navigation.navigate("Cart")}>
+  <EvilIcons name="cart" size={40} color={colors.egg} />
+</Pressable>
+
     </View>
   )
 }
+
 
 const styles = StyleSheet.create({
     container: {

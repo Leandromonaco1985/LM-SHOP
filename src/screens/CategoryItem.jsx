@@ -1,41 +1,22 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable, StatusBar, FlatList, Image } from 'react-native';
 import { colors } from '../global/colors';
+import { useNavigation } from '@react-navigation/native';
 
-const CategoryItem = ({ category, products, setSelectedCategory }) => {
-  const filteredProducts = products.filter((product) => product.categoria.toLowerCase() === category.toLowerCase());
-  const handleBackToHome = () => {
-    setSelectedCategory(null);
+const CategoryItem = ({ categoria }) => {
+  const navigation = useNavigation();
+
+  const handlePress = () => {
+    navigation.navigate('CategoryDetail', { categoria: categoria });
   };
-
-  const renderItem = ({ item }) => (
-    <View style={styles.productContainer}>
-      <Text style={styles.productName}>{item.nombre}</Text>
-      <Text style={styles.productDescription}>{item.descripcion}</Text>
-      <Text style={styles.productPrice}>Precio: ${item.precio}</Text>
-      {item.images.map((image, index) => (
-      <Image key={index} source={{ uri: image }} style={styles.productImage} />
-      ))}
-    </View>
-  );
 
   return (
     <View style={styles.container}>
-    <Text style={styles.title}>{category}</Text>
-    
-    <FlatList
-       style={styles.FlatListStyle}
-       contentContainerStyle={styles.flatListContent}
-      data={filteredProducts}
-      renderItem={renderItem}
-      keyExtractor={(item) => item.id.toString()}
-    />
-
-
-    <Pressable style={styles.btn} onPress={handleBackToHome}>
-      <Text style={styles.btnText}>Volver a Home</Text>
-    </Pressable>
-  </View>
+      <Pressable onPress={handlePress}>
+        <Text style={styles.title}>{categoria.categoryName}</Text>
+        <Image source={{ uri: categoria.img }} style={styles.image} />
+      </Pressable>
+    </View>
   );
 };
 
@@ -94,7 +75,12 @@ const styles = StyleSheet.create({
   btnText: {
     fontFamily: 'light',
     color: 'white'
-  }
+  },
+  image: {
+    width: 100,
+    height: 100,
+    borderRadius: 10,
+  },
 });
 
 export default CategoryItem;

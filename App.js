@@ -6,6 +6,7 @@ import Home from './src/screens/Home';
 import { colors } from './src/global/colors';
 import { useFonts } from 'expo-font';
 import { fonts } from './src/global/fonts';
+import Navigator from './src/navigation/Navigator';
 
 
 export default function App() {
@@ -15,25 +16,22 @@ export default function App() {
     return null
   }
   return (
-    <View style={styles.container}>
-       
-        <Header/>
-       
-        <Home/>
     
-       <StatusBar style="auto" />
-    </View>
+       
+      <Navigator/>
+      
+  
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.egg,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: colors.egg,
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//     paddingTop: Constants.statusBarHeight,
    
-  },
+//   },
 
-});
+// });
