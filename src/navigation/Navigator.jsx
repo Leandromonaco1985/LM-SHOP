@@ -6,6 +6,7 @@ import ProductDetail from "../screens/ProductDetail";
 import Cart from '../screens/Cart'
 import CategoryDetail from "../screens/CategoryDetail";
 import Categorias from "../components/Categorias";
+import Header from "../components/Header";
 
 
 const Navigator = () => {
@@ -14,7 +15,14 @@ const Navigator = () => {
 return (
 
     <NavigationContainer>    
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={({route})=> ({
+            header: ()=>{
+                return(
+                    <Header/>
+                )
+            }
+        }
+        )}>
             <Stack.Screen name="Home" component={Home}/>
             <Stack.Screen name= "CategoryItem" component={CategoryItem}/>
             <Stack.Screen name= "CategoryDetail" component={CategoryDetail}/>

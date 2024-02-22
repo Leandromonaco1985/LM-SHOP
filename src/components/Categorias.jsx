@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
-import { Text, StyleSheet, View, Pressable, Image, FlatList } from 'react-native';
+import React from 'react';
+import { Text, StyleSheet, View,FlatList } from 'react-native';
 import CategoryItem from '../screens/CategoryItem'
 import categorias from '../data/categorias.json';
-import productos from '../data/productos.json';
 import { colors } from '../global/colors';
 import { useNavigation } from '@react-navigation/native';
-
-
 
 const Categorias =()=>{
     const navigation = useNavigation();
@@ -19,6 +16,7 @@ const Categorias =()=>{
             data={categorias}
             renderItem={({item})=>(<CategoryItem categoria={item}  navigation={navigation} />)}
             keyExtractor={(item) => item.categoryName}
+            showsVerticalScrollIndicator={false}
             />
 
            

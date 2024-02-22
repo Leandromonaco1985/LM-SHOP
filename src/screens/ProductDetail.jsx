@@ -3,10 +3,12 @@ import React from 'react'
 import CategoryItem from './CategoryItem'
 import { colors } from '../global/colors';
 
+import { useNavigation } from '@react-navigation/native';
 
 const ProductDetail = ({ route, navigate }) => {
   // Obtener la información del producto de las props de la ruta
   const { producto } = route.params;
+  const navigation = useNavigation();
 
   return (
     <View style={styles.container}>

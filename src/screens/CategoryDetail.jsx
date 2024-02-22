@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, FlatList, Pressable, StyleSheet , Image} from 'react-native';
 import productos from '../data/productos.json';
 import { colors } from '../global/colors';
+import Header from '../components/Header';
 
 
 const CategoryDetail = ({ route, navigation }) => {
@@ -11,6 +12,7 @@ const CategoryDetail = ({ route, navigation }) => {
     
     return (
         <View style={styles.container}>
+        
             <Text style={styles.title}> {categoria.categoryName}</Text>
             <View style={styles.categoryBox}>
 
@@ -27,6 +29,7 @@ const CategoryDetail = ({ route, navigation }) => {
                     );
                 }}
                 keyExtractor={(item) => item.id.toString()} 
+                showsVerticalScrollIndicator = {false}
                 />
             </View>
         </View>
@@ -60,7 +63,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 15,
         borderColor: 'black',
-        borderWidth: 1, // Ancho del borde
+        borderWidth: 1, 
         borderRadius: 10,
       },
       productImage: {

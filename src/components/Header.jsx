@@ -22,8 +22,9 @@ const Header =({navigation, title})=> {
 
 const styles = StyleSheet.create({
     container: {
+      paddingTop: 30,
         flexDirection: 'row', 
-        justifyContent: 'space-between', 
+        justifyContent: 'space-around', 
         alignItems: 'center', 
         paddingVertical: 10, 
         width: '100%',
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
     },
     header: {
         fontFamily: 'bold',
-        fontSize: 24,
+        fontSize: 30,
         color: colors.egg
     },
 })

@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Text, StyleSheet, View, Pressable, Image } from 'react-native';
-import CategoryItem from './CategoryItem';
-import categorias from '../data/categorias.json';
-import productos from '../data/productos.json';
+
 import { colors } from '../global/colors';
 import Header from '../components/Header';
 import Categorias from '../components/Categorias';
@@ -13,7 +11,7 @@ const Home = () => {
  
   return (
     <View style={styles.container}>
-      <Header navigation={navigation}/>
+    
       <Categorias  navigation={navigation}/>
       
     </View>
