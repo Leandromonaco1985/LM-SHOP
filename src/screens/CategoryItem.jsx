@@ -1,18 +1,21 @@
 import React from 'react';
-import { View, Text, StyleSheet, Pressable, StatusBar, FlatList, Image } from 'react-native';
+import { View, Text, StyleSheet, Pressable, Image } from 'react-native';
 import { colors } from '../global/colors';
 import { useNavigation } from '@react-navigation/native';
+import { useDispatch } from 'react-redux';
+import { setCategorySelected } from '../components/features/shop/shopSlice';
 
 const CategoryItem = ({ categoria }) => {
   const navigation = useNavigation();
+  const dispatch = useDispatch();
 
-  const handlePress = () => {
-    navigation.navigate('CategoryDetail', { categoria: categoria });
-  };
 
   return (
     <View style={styles.container}>
-      <Pressable onPress={handlePress}>
+      <Pressable onPress={()=>{
+        dispatch (setCategorySelected (categoria))
+        navigation.navigate('CategoryDetail', { categoria: categoria })
+      }}>
         <Text style={styles.title}>{categoria.categoryName}</Text>
         <Image source={{ uri: categoria.img }} style={styles.image} />
       </Pressable>
@@ -44,7 +47,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 15,
     borderColor: 'black',
-    borderWidth: 1, // Ancho del borde
+    borderWidth: 1, 
     borderRadius: 10,
   },
   productName: {

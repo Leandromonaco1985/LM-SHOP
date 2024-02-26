@@ -1,14 +1,19 @@
 import React from 'react';
-import { View, Text, FlatList, Pressable, StyleSheet , Image} from 'react-native';
-import productos from '../data/productos.json';
+import { View, Text, FlatList, Pressable, StyleSheet, Image } from 'react-native';
+import { useSelector } from 'react-redux'; 
+import { useEffect } from 'react';
 import { colors } from '../global/colors';
-import Header from '../components/Header';
 
-
-const CategoryDetail = ({ route, navigation }) => {
-   
+const CategoryDetail = ({ route, navigation }) => { // Agregar `route` como prop
     const { categoria } = route.params;
+    const productos = useSelector(state => state.shopReducer.value.productos); // Obtener productos desde el estado
+
+    // useEffect(() => {
+    //     // Lógica de efecto aquí
+    // }, []);
+
     const filteredProducts = productos.filter(producto => producto.categoria.toLowerCase() === categoria.categoryName.toLowerCase());
+
     
     return (
         <View style={styles.container}>

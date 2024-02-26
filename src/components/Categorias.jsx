@@ -1,29 +1,30 @@
 import React from 'react';
-import { Text, StyleSheet, View,FlatList } from 'react-native';
-import CategoryItem from '../screens/CategoryItem'
-import categorias from '../data/categorias.json';
+import { Text, StyleSheet, View, FlatList } from 'react-native';
+import CategoryItem from '../screens/CategoryItem'; 
 import { colors } from '../global/colors';
 import { useNavigation } from '@react-navigation/native';
+import { useDispatch, useSelector } from 'react-redux';
 
-const Categorias =()=>{
+const Categorias = () => {
+    const categorias = useSelector((state) => state.shopReducer.value.categorias);
     const navigation = useNavigation();
-    return (
-      <View style={styles.container}>
-        
-        <Text style={styles.title}>Categorías de Productos</Text>
-        <View style={styles.categoryBox}>
-            <FlatList
-            data={categorias}
-            renderItem={({item})=>(<CategoryItem categoria={item}  navigation={navigation} />)}
-            keyExtractor={(item) => item.categoryName}
-            showsVerticalScrollIndicator={false}
-            />
+    const dispatch = useDispatch(); 
 
-           
+    return (
+        <View style={styles.container}>
+            <Text style={styles.title}>Categorías de Productos</Text>
+            <View style={styles.categoryBox}>
+                <FlatList
+                    data={categorias}
+                    renderItem={({ item }) => <CategoryItem categoria={item} navigation={navigation} />}
+                    keyExtractor={(item) => item.categoryName}
+                    showsVerticalScrollIndicator={false}
+                />
+            </View>
         </View>
-      </View>
     );
-  };
+};
+
   
   const styles = StyleSheet.create({
     container: {

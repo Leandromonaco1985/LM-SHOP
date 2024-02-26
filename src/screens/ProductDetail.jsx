@@ -1,14 +1,12 @@
-import { StyleSheet, Text, View , Image, } from 'react-native'
-import React from 'react'
-import CategoryItem from './CategoryItem'
-import { colors } from '../global/colors';
-import Header from '../components/Header';
+import React from 'react';
+import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import Counter from '../components/Counter copy';
+import { colors } from '../global/colors';
 
-const ProductDetail = ({ route, navigate }) => {
-  // Obtener la información del producto de las props de la ruta
-  const { producto } = route.params;
-  const navigation = useNavigation();
+const ProductDetail = ({ route }) => { // Agregar `route` como prop
+    const { producto } = route.params;
+    const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
@@ -18,6 +16,10 @@ const ProductDetail = ({ route, navigate }) => {
       <Text style={styles.description}>{producto.descripcion}</Text>
       <Text style={styles.price}>Precio: ${producto.precio}</Text>
       <Text style={styles.stock}>Stock disponible: {producto.stock}</Text>
+      <Counter/>
+      <Pressable style={styles.btn}>
+        <Text style={styles.btnText}> Add To Cart</Text>
+      </Pressable>
     </View>
   );
 };
@@ -56,6 +58,16 @@ const styles = StyleSheet.create({
   stock: {
     fontSize: 16,
   },
+  btn: {
+    margin: 25,
+    padding: 15,
+    backgroundColor: colors.violet,
+    borderRadius: 15,
+  },
+  btnText: {
+    fontFamily: 'light',
+    color: 'white'
+  }
 });
 
 export default ProductDetail
