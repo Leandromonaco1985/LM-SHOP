@@ -1,0 +1,41 @@
+[
+    {
+    "id": 5,
+    "nombre": "Contrabajo Stagg EDB-3/4 BK",
+    "descripcion": "Contrabajo eléctrico de alta calidad, perfecto para conciertos y ensayos.",
+    "precio": 1800,
+    "quantity": 1,
+    "marca": "Stagg",
+    "categoria": "contrabajos",
+    "images": [
+      "hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOe9Z_5Nu9vrL0pgw3WeEtMOwTxCivquMRH6DjhpOZHN2uj4-UZGn00kUPlmrz4SpsyzA&usqp=CAU",
+
+    ]
+  },
+  {
+    "id": 23,
+    "nombre": "Camiseta Aldosivi",
+    "descripcion": "Camiseta oficial del Tiburon.",
+    "precio": 180,
+    "quantity": 2,
+    "marca": "Kappa",
+    "categoria": "camisetas de futbol",
+    "images": [
+      "https://example.com/camiseta1.jpg",
+      "https://example.com/camiseta1_2.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "nombre": "Bajo Eléctrico Fender Jazz Bass",
+    "descripcion": "Bajo eléctrico clásico con un sonido brillante y versátil.",
+    "precio": 2500,
+    "stock": 7,
+    "marca": "Fender",
+    "categoria": "bajos electricos",
+    "images": [
+      "https://example.com/bajo6.jpg",
+      "https://example.com/bajo6_2.jpg"
+    ]
+  }
+]

@@ -4,17 +4,18 @@ import { Ionicons } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { colors } from '../global/colors';
 import { fonts } from '../global/fonts';
+import { useNavigation } from '@react-navigation/native';
 
 const Header =({navigation, title})=> {
   return (
     <View style={styles.container}>
         <Ionicons name="menu" size={40} color={colors.egg} />
-       <Text style={styles.header}> LM SHOP</Text>
-       <Text> {title}</Text>
-       <Pressable onPress={() => navigation.navigate("Cart")}>
-  <EvilIcons name="cart" size={40} color={colors.egg} />
-</Pressable>
-
+        <Pressable onPress={()=> navigation.navigate("Home")}>
+            <Text style={styles.header}> LM SHOP</Text>
+        </Pressable>
+        <Text> {title}</Text>
+        
+    
     </View>
   )
 }

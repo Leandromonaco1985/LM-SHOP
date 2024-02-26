@@ -12,7 +12,7 @@ const CategoryDetail = ({ route, navigation }) => {
     
     return (
         <View style={styles.container}>
-        
+          
             <Text style={styles.title}> {categoria.categoryName}</Text>
             <View style={styles.categoryBox}>
 

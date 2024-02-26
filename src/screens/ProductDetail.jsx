@@ -2,7 +2,7 @@ import { StyleSheet, Text, View , Image, } from 'react-native'
 import React from 'react'
 import CategoryItem from './CategoryItem'
 import { colors } from '../global/colors';
-
+import Header from '../components/Header';
 import { useNavigation } from '@react-navigation/native';
 
 const ProductDetail = ({ route, navigate }) => {
@@ -12,6 +12,7 @@ const ProductDetail = ({ route, navigate }) => {
 
   return (
     <View style={styles.container}>
+     
       <Text style={styles.title}>{producto.nombre}</Text>
       <Image source={{ uri: producto.images[0] }} style={styles.image} />
       <Text style={styles.description}>{producto.descripcion}</Text>
